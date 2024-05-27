@@ -39,6 +39,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 75%;
+    font-size:70%
 }
 .carousel-item img {
     width: 100%;

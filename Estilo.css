@@ -1,36 +1,60 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: #fff;
+    color: #1F2668;
 }
 
+/* Estilos del encabezado */
 header {
-    background-color:#1F2668;
+    background-color: #1F2668;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
 }
+
+/* Estilos de la barra de navegación */
 nav {
     background-color: #555;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
-nav a {
-    color: #fff;
-    text-decoration: none;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 10px;
 }
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
+
+/* Estilos del contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section, aside {
+    flex-basis: calc(50% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #1F2668;
+}
+
+/* Estilos del footer */
 footer {
     background-color: #1F2668;
     color: #fff;
@@ -38,10 +62,5 @@ footer {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 75%;
-    font-size:60%
-}
-.carousel-item img {
     width: 100%;
-    height: auto;
 }

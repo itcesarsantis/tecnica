@@ -3,50 +3,68 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
-    width: 80%;
+    width: 80%; /* Cambiado a % */
     margin: 0 auto;
-    padding: 20px;
-}
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
+    padding: 2%; /* Cambiado a % */
 }
 
 header {
     background-color:#1F2668;
     color: #fff;
-    padding: 10px 0;
+    padding: 1% 0; /* Cambiado a % */
     text-align: center;
 }
+
 nav {
     background-color: #555;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1% 0; /* Cambiado a % */
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 2%; /* Cambiado a % */
 }
+
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    padding: 2%; /* Cambiado a % */
+    margin: 2% auto; /* Cambiado a % */
+    max-width: 95%; /* Cambiado a % */
 }
+
 footer {
     background-color: #1F2668;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1% 0; /* Cambiado a % */
     position: fixed;
     bottom: 0;
-    width: 70%;
+    width: 75%; /* Cambiado a % */
 }
+
 .carousel-item img {
     width: 100%;
     height: auto;
+}
+
+/* Consultas de medios para ajustar estilos en diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 5%;
+    }
+
+    section {
+        padding: 5%;
+        margin: 5% auto;
+        max-width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
